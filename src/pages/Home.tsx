@@ -2,18 +2,16 @@ import React, {useState} from "react";
 
 import Navbar from "../components/Navbar/Navbar";
 import Sidebar from "../components/Sidebar/Sidebar";
+import HomePage from "../components/Pages/Home/HomePage";
+import Header from "../components/Header";
+import Footer from "../components/Footer/Footer";
 const Home = () => {
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-        setIsOpen(!isOpen);
-    }
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle}/>
+            <Header />
+            <HomePage />
+            <Footer />
         </>
     );
 };
