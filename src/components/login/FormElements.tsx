@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const FormBox = styled.div`
+  width:300px;
+  
+`;
 export const InputBox = styled.div`
   display: grid;
   margin: 30px 0px;
@@ -21,6 +25,7 @@ export const UpperInfo = styled.div`
 `;
 
 export const BtnInput = styled.input`
+  display: grid;;
   outline: none;
   border: none;
   width: 200px;
@@ -35,3 +40,15 @@ export const BtnInput = styled.input`
   background: linear-gradient(to right, rgb(95, 95, 95), rgb(50, 50, 50));
 `;
 
+export const ErrorBox = styled.div`
+  display: grid;
+  background-color: #ffd6d6;
+  color: #d8000c;
+  padding: 5px 20px;
+  border-radius: 4px;
+  text-align: center;
+`;
+
+export const ErrorText = styled.div`
+  word-break: break-word;
+`;
