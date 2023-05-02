@@ -5,8 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import {AuthProvider, RequireAuth} from "react-auth-kit";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
-import LoginForm from "./components/login/LoginForm";
 import About from "./pages/About";
+import LoginPage from "./components/Pages/Login/LoginPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,10 +26,10 @@ root.render(
                     <Route path="/kontakt" element={<About />}/>
                     <Route path="/panel" element={
                         <RequireAuth loginPath="/login">
-                            <LoginForm />
+                            <LoginPage />
                         </RequireAuth>
                     }/>
-                    <Route path="/login" element={ <LoginForm /> } />
+                    <Route path="/login" element={ <LoginPage /> } />
                 </Routes>
             </React.StrictMode>
         </BrowserRouter>
