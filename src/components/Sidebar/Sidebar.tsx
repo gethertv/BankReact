@@ -20,12 +20,15 @@ const Sidebar = ( {isOpen, toggle} : {isOpen:any, toggle:any}) => {
                     <SidebarLink to='/' onClick={toggle}>
                         Home
                     </SidebarLink>
-                    <SidebarLink to='/about' onClick={toggle}>
-                        About
+                    <SidebarLink to='/panel' onClick={toggle}>
+                        Panel
                     </SidebarLink>
-                    <SidebarLink to='/about' onClick={toggle}>
-                        About
-                    </SidebarLink>
+                    {/*<SidebarLink to='/about' onClick={toggle}>*/}
+                    {/*    About*/}
+                    {/*</SidebarLink>*/}
+                    {/*<SidebarLink to='/about' onClick={toggle}>*/}
+                    {/*    About*/}
+                    {/*</SidebarLink>*/}
                 </SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute to='/login'>ZALOGUJ SIĘ</SidebarRoute>

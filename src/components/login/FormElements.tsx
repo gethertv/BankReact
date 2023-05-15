@@ -52,3 +52,17 @@ export const ErrorBox = styled.div`
 export const ErrorText = styled.div`
   word-break: break-word;
 `;
+
+export const SuccessBox = styled.div`
+  display: grid;
+  background-color: #aeff4e;
+  color: #111;
+  padding: 5px 20px;
+  border-radius: 4px;
+  text-align: center;
+`;
+
+export const SuccessText = styled.div`
+  word-break: break-word;
+`;
+

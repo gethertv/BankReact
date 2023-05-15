@@ -6,6 +6,7 @@ import {AuthProvider, RequireAuth} from "react-auth-kit";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Panel from "./pages/Panel";
 import LoginPage from "./components/Pages/Login/LoginPage";
 
 const root = ReactDOM.createRoot(
@@ -22,12 +23,12 @@ root.render(
             <React.StrictMode>
                 <Routes>
                     <Route path="/" element={<Home />}/>
-                    <Route path="/o-nas" element={<About />}/>
-                    <Route path="/kontakt" element={<About />}/>
+                    <Route path="/register" element={<About />}/>
                     <Route path="/panel" element={
-                        <RequireAuth loginPath="/login">
-                            <LoginPage />
-                        </RequireAuth>
+                            <Panel />
+                    }/>
+                    <Route path="/panel/transfer" element={
+                            <Panel />
                     }/>
                     <Route path="/login" element={ <LoginPage /> } />
                 </Routes>
